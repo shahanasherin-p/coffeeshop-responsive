@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+/* nav{
+    padding: 20px;
+    text-align: center;
+} */
+.menus{
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.nav-items{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    padding-right: 15px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+#logo{
+    width: 150px;
+}
+
+
+@media(max-width:860px){
+
+    nav{
+        position: absolute;
+        top: 100%;
+        background-color: rgb(177, 174, 174);
+        width: 30%;
+        display: none;
+        left: 70%;
+
+
+    }
+    nav .nav-items{
+        display: block;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .menus{
+        display: flex;
+    }
+    #cancel{
+        display: none;
+    }
+    #check:checked~.menus #menu{
+        display: none;
+        left: 5%;
+
+    }
+    #check:checked~.menus #cancel{
+        display: block;
+        left: 5%;
+    }
+    #check:checked~nav{
+        display: block;
+        height: 250px;
+    }
+    .cafes,.learn,.bean{
+        padding: 0px 20px;
+       
+    }
+ 
+
+
+
+
+}
+.hom-img{
+    width: 100%;
+    height: 650px;
+    padding-top: 100px;
+    /* border: solid; */
+}
+.cofe-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.cafes,.learn,.bean {
+    width: 500px;
+    height: 400px;
+    /* margin-top: 10px; */
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.visit,.brew,.buy{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    /* border: solid; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 350px; */
+    background-color: gainsboro;
+
+}
+.ca{
+    margin-top: 30px;
+}
+.caf-btn{
+    text-decoration: none;
+    color: white;
+    /* border: solid 1px black; */
+    padding: 10px;
+    background-color: rgb(63, 62, 62);
+    border-radius: 1rem;
+
+}
+#cas1{
+   line-height: 1.5;
+}
+.caf-par{
+    font-weight: 400;
+}
+/* .brew{
+    display: flex;
+    justify-content: center;
+
+} */
+/* .learn{
+    width: 500px;
+    height: 400px;
+}
+.bean{
+    width: 500px;
+    height: 400px;
+} */
+/* .buy{
+    display: flex;
+    justify-content: center;
+} */
+ .products{
+    background-color: gainsboro;
+ }
+ .pro-hed{
+    text-align: center;
+    font-size: 30px;
+ }
+.pro-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .cards{
+    width: 500px;
+    height: 300px;
+    box-shadow: rgb(71, 71, 90);
+    margin-left: 10px;
+    margin-top: 15px;
+    box-shadow: 10px 10px 5px rgb(175, 178, 179);
+    cursor: pointer;
+    overflow: hidden;
+    /* transform: scale(1.5); */
+    transition:  0.3s ease-in-out;
+    /* border: solid; */
+    /* padding: 10px; */
+    position: relative;
+ }
+.text-over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.text-over:hover{
+    opacity: 1;
+}
+ /* .cards:hover{
+    transform: scale(1.1);
+ } */
+
+  
+  .cards img:hover   {
+    transform: scale(1.1);
+  }
+
+footer{
+    background-color: black;
+    padding: 50px;
+    /* height: 100px; */
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.fot{
+    color: white;
+    text-align: center;
+}
+.ic{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+   
+
+}
